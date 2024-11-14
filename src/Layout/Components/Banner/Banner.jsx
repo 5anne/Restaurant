@@ -1,11 +1,12 @@
 import React from 'react';
-import imgHome from '../../../../src/assets/image-home.svg';
-import imgGroup from '../../../../src/assets/flower.svg';
-import "../../Home/Home.css"
+import imgHome from '../../../assets/image-home.svg';
+import imgGroup from '../../../assets/flower.svg';
+import "../../Home/Home.css";
+import "../Banner/Banner.css";
 
 const Banner = () => {
     return (
-        <div className='bg-[#BD1F17] lg:flex lg:items-center max-w-full p-8 lg:px-40 relative'>
+        <div className='banner-img lg:flex lg:items-center max-w-full p-8 lg:px-40 pt-20 relative'>
             <div className='flex-1'>
                 <h6 className='bebas-neue text-white text-4xl lg:text-8xl bg-[#BD1F1780] py-2 pr-4 lg:absolute top-44'>Taste the authentic <br />Saudi cuisine</h6>
                 <div className='lg:absolute top-96 space-y-4'>

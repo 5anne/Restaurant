@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar = () => {
     return (
-        <div className="navbar justify-evenly bg-[#BD1F17] roboto text-white font-light">
+        <div className="navbar justify-evenly bg-[#BD1F17] roboto text-white font-light fixed z-10">
             <div className="gap-10">
                 <img src={logo} alt="" />
                 <div className='hidden lg:flex gap-10'>
