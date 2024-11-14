@@ -5,6 +5,7 @@ import Banner from '../Components/Banner/Banner';
 import PopularFood from '../PopularFood/PopularFood';
 import Booking from '../Booking/Booking';
 import Review from '../Review/Review';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <PopularFood></PopularFood>
             <Booking></Booking>
             <Review></Review>
+            <Footer></Footer>
         </div>
     );
 };

@@ -4,7 +4,7 @@ import "../Home/Home.css";
 
 const Booking = () => {
     return (
-        <div className='p-6 lg:px-40 lg:py-20 bg-no-repeat bg-cover bg-current space-y-4' style={{
+        <div className='p-6 lg:px-40 lg:py-20 bg-no-repeat bg-cover bg-center space-y-4' style={{
             backgroundImage: "url(https://i.postimg.cc/XJZ5HXS7/utensils-Background.jpg)",
         }}>
             <div>
