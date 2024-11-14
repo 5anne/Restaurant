@@ -18,7 +18,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="hidden lg:flex">
-                <button className='bg-[#FEBF00] font-semibold text-black py-2 px-6'>Book a Table</button>
+                <button className='bg-[#FEBF00] font-semibold text-black py-2 px-6 uppercase'>Book a Table</button>
             </div>
             <div className="dropdown dropdown-bottom dropdown-end lg:hidden">
                 <div tabIndex={0} role="button" className="text-2xl"><GiHamburgerMenu /></div>

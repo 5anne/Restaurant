@@ -10,7 +10,7 @@ const Banner = () => {
                 <h6 className='bebas-neue text-white text-4xl lg:text-8xl bg-[#BD1F1780] py-2 pr-4 lg:absolute top-44'>Taste the authentic <br />Saudi cuisine</h6>
                 <div className='lg:absolute top-96 space-y-4'>
                     <p className='roboto text-white font-light text-sm lg:text-base leading-relaxed'>Among the best Saudi chefs in the world, serving <br />you something beyond flavor.</p>
-                    <button className='bg-[#FEBF00] roboto font-bold text-black py-2 px-6'>Explore Menu</button>
+                    <button className='bg-[#FEBF00] roboto font-bold text-black py-2 px-6 uppercase'>Explore Menu</button>
                 </div>
             </div>
             <div className='flex-1 my-10'>
