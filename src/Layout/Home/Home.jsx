@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar/Navbar';
 import Banner from '../Components/Banner/Banner';
 import PopularFood from '../PopularFood/PopularFood';
 import Booking from '../Booking/Booking';
+import Review from '../Review/Review';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <About></About>
             <PopularFood></PopularFood>
             <Booking></Booking>
+            <Review></Review>
         </div>
     );
 };
