@@ -70,7 +70,7 @@ const Review = () => {
                                 <img className='absolute -left-0 bottom-14 w-6' src={flower} alt="" />
                             </div>
                             <div className='lg:w-7/12'>
-                                <img src={foodImg} alt="" />
+                                <iframe className='w-full h-full' src="https://www.youtube.com/embed/wdvIcau0TxM?si=Nsl9k74Owq4G8Feg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -81,15 +81,15 @@ const Review = () => {
                                 <p className='leading-relaxed mb-24 ml-4'>You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
                                 <div className='flex justify-between border-b-2 border-black'>
                                     <div className='mb-2'>
-                                        <p className='bebas-neue text-xl'>Khalid Al Dawsry</p>
-                                        <p>Jeddah, Saudi</p>
+                                        <p className='bebas-neue text-xl'>Anastasia R.</p>
+                                        <p>Newyork, USA</p>
                                     </div>
                                     <img className='border-b-2 border-[#BD1F17] pb-2' src={customer} alt="" />
                                 </div>
                                 <img className='absolute -left-0 bottom-14 w-6' src={flower} alt="" />
                             </div>
                             <div className='lg:w-7/12'>
-                                <img src={foodImg} alt="" />
+                                <iframe className='w-full h-full' src="https://www.youtube.com/embed/8GxfnU5gVII?si=wQhhbaiAaGL4av4v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -100,15 +100,15 @@ const Review = () => {
                                 <p className='leading-relaxed mb-24 ml-4'>You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
                                 <div className='flex justify-between border-b-2 border-black'>
                                     <div className='mb-2'>
-                                        <p className='bebas-neue text-xl'>Khalid Al Dawsry</p>
-                                        <p>Jeddah, Saudi</p>
+                                        <p className='bebas-neue text-xl'>Hannah Rao</p>
+                                        <p>Sydney, Australia</p>
                                     </div>
                                     <img className='border-b-2 border-[#BD1F17] pb-2' src={customer} alt="" />
                                 </div>
                                 <img className='absolute -left-0 bottom-14 w-6' src={flower} alt="" />
                             </div>
                             <div className='lg:w-7/12'>
-                                <img src={foodImg} alt="" />
+                                <iframe className='w-full h-full' src="https://www.youtube.com/embed/YxVZuuxxXxk?si=DUhhAzgYBSLMW5T6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                     </SwiperSlide>

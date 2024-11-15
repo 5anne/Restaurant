@@ -2,19 +2,23 @@ import React from 'react';
 import logo from "../../../assets/Logo.svg";
 import "../../Home/Home.css";
 import { GiHamburgerMenu } from 'react-icons/gi';
+// import { useScrollContext } from '../../../Providers/ScrollProvider';
 
 const Navbar = () => {
+    // const { scrollToAbout } = useScrollContext();
+
     return (
         <div className="navbar justify-evenly bg-[#BD1F17] roboto text-white font-light fixed z-10">
             <div className="gap-10">
                 <img src={logo} alt="" />
                 <div className='hidden lg:flex gap-10'>
-                    <a>Home</a>
-                    <a>About</a>
-                    <a>Portfolio</a>
-                    <a>Clients</a>
-                    <a>Blog</a>
-                    <a>Contact</a>
+                    <a className='hover:cursor-pointer hover:underline'>Home</a>
+                    {/* <a onClick={scrollToAbout} className='hover:cursor-pointer hover:underline'>About</a> */}
+                    <a className='hover:cursor-pointer hover:underline'>About</a>
+                    <a className='hover:cursor-pointer hover:underline'>Portfolio</a>
+                    <a className='hover:cursor-pointer hover:underline'>Clients</a>
+                    <a className='hover:cursor-pointer hover:underline'>Blog</a>
+                    <a className='hover:cursor-pointer hover:underline'>Contact</a>
                 </div>
             </div>
             <div className="hidden lg:flex">

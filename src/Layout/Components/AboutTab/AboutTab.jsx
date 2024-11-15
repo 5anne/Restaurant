@@ -31,7 +31,7 @@ const AboutTab = () => {
             </TabPanel>
             <TabPanel className='space-y-4 mt-4'>
                 <h6 className='bebas-neue text-4xl'>Exceptional culinary <br />experience and delicious food</h6>
-                <p className='text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
+                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ab est ipsam officia consequuntur qui eius laboriosam dolore rerum necessitatibus odit quo velit ducimus, iure ratione dolorem obcaecati autem quas.</p>
                 <div className='flex items-center gap-8'>
                     <button className='bg-[#FEBF00] roboto font-bold text-black py-2 px-6 text-sm lg:text-base uppercase'>About more</button>
                     <div className='flex items-center gap-2'>

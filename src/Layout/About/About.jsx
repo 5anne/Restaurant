@@ -7,9 +7,13 @@ import badge from "../../assets/badge.svg";
 import bag from "../../assets/bag.svg";
 import capsicum from "../../assets/bell-pepper-sliced-black-bowl.svg";
 import AboutTab from '../Components/AboutTab/AboutTab';
+// import { useScrollContext } from '../../Providers/ScrollProvider';
 
 const About = () => {
+    // const { aboutRef } = useScrollContext();
+
     return (
+        // <div ref={aboutRef} className='relative'>
         <div className='relative'>
             <div className='lg:flex justify-between roboto gap-10 p-6 lg:px-40 lg:py-20'>
                 <div className='flex-1 relative'>

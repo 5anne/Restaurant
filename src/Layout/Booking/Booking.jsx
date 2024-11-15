@@ -1,11 +1,24 @@
 import React from 'react';
 import redDisk from "../../assets/Rectangle.svg";
 import "../Home/Home.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Booking = () => {
 
-    const handleForm = (event) => {
-        event.preventDefault();
+    const handleForm = (e) => {
+        e.preventDefault();
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+        const date = e.target.date.value;
+        const numOfPeople = e.target.numOfPeople.value;
+        const message = e.target.message.value;
+        const clientData = { name, email, date, numOfPeople, message }
+
+        console.log(clientData);
+        if (clientData) {
+            toast("Your Reservation is successfully done!");
+        }
     }
 
     return (
@@ -20,7 +33,7 @@ const Booking = () => {
                 <h6 className='bebas-neue text-4xl text-white'>Book Your Table</h6>
             </div>
             <p className='text-gray-400'>Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo <br />molestie vel, ornare non id blandit netus.</p>
-            <form onSubmit={() => handleForm()} action="">
+            <form onSubmit={handleForm} action="">
                 <div className='lg:flex gap-8 mb-6'>
                     <div className='flex flex-col'>
                         <input type="text" name='name' placeholder='Your Name' className='bg-transparent border-2 border-white text-white p-2' required /><br />
@@ -32,9 +45,12 @@ const Booking = () => {
                     </div>
                 </div>
                 <textarea
+                    type="text"
+                    name='message'
                     placeholder="Message"
                     className="rounded-none textarea-lg w-[330px] lg:w-[470px] bg-transparent border-2 text-white border-white mb-6"></textarea><br />
                 <button className='bg-[#FEBF00] roboto font-bold text-black py-2 px-6 text-sm lg:text-base uppercase'>Book Now</button>
+                <ToastContainer />
             </form>
         </div>
     );
