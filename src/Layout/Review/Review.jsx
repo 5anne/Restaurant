@@ -9,8 +9,21 @@ import comma from "../../assets/comma.svg";
 import flower from "../../assets/Group.svg";
 import tomato from "../../assets/tomato.svg";
 import celery from "../../assets/celery.svg";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 const Review = () => {
+    const pagination = {
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+    };
+
     return (
         <div className='relative'>
             <div className='p-6 lg:px-40 lg:py-20 roboto'>
@@ -27,23 +40,79 @@ const Review = () => {
                         <img className='w-16' src={rightAgle} alt="" />
                     </div>
                 </div>
-                <div className='flex flex-col-reverse lg:flex-row'>
-                    <div className='lg:w-5/12 bg-[#FEBF00] p-12 relative'>
-                        <img src={comma} alt="" />
-                        <p className='leading-relaxed mb-24 ml-4'>You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
-                        <div className='flex justify-between border-b-2 border-black'>
-                            <div className='mb-2'>
-                                <p className='bebas-neue text-xl'>Khalid Al Dawsry</p>
-                                <p>Jeddah, Saudi</p>
+                <Swiper
+                    slidesPerView={1}
+                    spaceBetween={30}
+                    freeMode={true}
+                    pagination={{
+                        pagination,
+                        clickable: true,
+                    }}
+                    autoplay={{
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    }}
+                    modules={[FreeMode, Pagination, Autoplay]}
+                    className="mySwiper"
+                >
+                    <SwiperSlide>
+                        <div className='flex flex-col-reverse lg:flex-row'>
+                            <div className='lg:w-5/12 bg-[#FEBF00] p-12 relative'>
+                                <img src={comma} alt="" />
+                                <p className='leading-relaxed mb-24 ml-4'>You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
+                                <div className='flex justify-between border-b-2 border-black'>
+                                    <div className='mb-2'>
+                                        <p className='bebas-neue text-xl'>Khalid Al Dawsry</p>
+                                        <p>Jeddah, Saudi</p>
+                                    </div>
+                                    <img className='border-b-2 border-[#BD1F17] pb-2' src={customer} alt="" />
+                                </div>
+                                <img className='absolute -left-0 bottom-14 w-6' src={flower} alt="" />
                             </div>
-                            <img className='border-b-2 border-[#BD1F17] pb-2' src={customer} alt="" />
+                            <div className='lg:w-7/12'>
+                                <img src={foodImg} alt="" />
+                            </div>
                         </div>
-                        <img className='absolute -left-0 bottom-14 w-6' src={flower} alt="" />
-                    </div>
-                    <div className='lg:w-7/12'>
-                        <img src={foodImg} alt="" />
-                    </div>
-                </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='flex flex-col-reverse lg:flex-row'>
+                            <div className='lg:w-5/12 bg-[#FEBF00] p-12 relative'>
+                                <img src={comma} alt="" />
+                                <p className='leading-relaxed mb-24 ml-4'>You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
+                                <div className='flex justify-between border-b-2 border-black'>
+                                    <div className='mb-2'>
+                                        <p className='bebas-neue text-xl'>Khalid Al Dawsry</p>
+                                        <p>Jeddah, Saudi</p>
+                                    </div>
+                                    <img className='border-b-2 border-[#BD1F17] pb-2' src={customer} alt="" />
+                                </div>
+                                <img className='absolute -left-0 bottom-14 w-6' src={flower} alt="" />
+                            </div>
+                            <div className='lg:w-7/12'>
+                                <img src={foodImg} alt="" />
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='flex flex-col-reverse lg:flex-row'>
+                            <div className='lg:w-5/12 bg-[#FEBF00] p-12 relative'>
+                                <img src={comma} alt="" />
+                                <p className='leading-relaxed mb-24 ml-4'>You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
+                                <div className='flex justify-between border-b-2 border-black'>
+                                    <div className='mb-2'>
+                                        <p className='bebas-neue text-xl'>Khalid Al Dawsry</p>
+                                        <p>Jeddah, Saudi</p>
+                                    </div>
+                                    <img className='border-b-2 border-[#BD1F17] pb-2' src={customer} alt="" />
+                                </div>
+                                <img className='absolute -left-0 bottom-14 w-6' src={flower} alt="" />
+                            </div>
+                            <div className='lg:w-7/12'>
+                                <img src={foodImg} alt="" />
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
             <div className='hidden lg:flex justify-between'>
                 <img className='absolute bottom-96 w-24' src={tomato} alt="" />
